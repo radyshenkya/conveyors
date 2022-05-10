@@ -3,3 +3,5 @@ scoreboard objectives add autodelic.tick_counter dummy
 scoreboard objectives add autodelic.temp dummy
 
 scoreboard players set autodelic.settings autodelic.ticks_before_move 11
+
+data modify storage autodelic.sorting temp set value {}
