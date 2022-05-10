@@ -1,35 +1,35 @@
 # WEST
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=west] if data block ~-1 ~ ~ Items[0] align xyz positioned ~ ~1 ~ run summon armor_stand ~0.85 ~-0.8 ~0.1 {Tags:["item_on_belt", "new_unloaded_item"], Invisible:1b,Invulnerable:1b,NoGravity:1b,ShowArms:1b,Pose:{RightArm:[345f,0f,0f]}}
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=west] if data block ~-1 ~ ~ Items[0] run data modify entity @e[tag=new_unloaded_item,limit=1] HandItems[0] set from block ~-1 ~ ~ Items[0]
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=west] if data block ~-1 ~ ~ Items[0] run data modify entity @e[tag=new_unloaded_item,limit=1] HandItems[0].Count set value 1
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=west] if data block ~-1 ~ ~ Items[0] store result score @s autodelic.temp run data get block ~-1 ~ ~ Items[0].Count
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=west] if data block ~-1 ~ ~ Items[0] run scoreboard players remove @s autodelic.temp 1
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=west] if data block ~-1 ~ ~ Items[0] store result block ~-1 ~ ~ Items[0].Count int 1 run scoreboard players get @s autodelic.temp
+execute if block ~ ~ ~ grindstone[facing=west] if data block ~-1 ~ ~ Items[0] align xyz positioned ~ ~1 ~ run summon armor_stand ~0.85 ~-0.8 ~0.1 {Tags:["item_on_belt", "new_unloaded_item"], Invisible:1b,Invulnerable:1b,NoGravity:1b,ShowArms:1b,Pose:{RightArm:[345f,0f,0f]}}
+execute if block ~ ~ ~ grindstone[facing=west] if data block ~-1 ~ ~ Items[0] run data modify entity @e[tag=new_unloaded_item,limit=1] HandItems[0] set from block ~-1 ~ ~ Items[0]
+execute if block ~ ~ ~ grindstone[facing=west] if data block ~-1 ~ ~ Items[0] run data modify entity @e[tag=new_unloaded_item,limit=1] HandItems[0].Count set value 1
+execute if block ~ ~ ~ grindstone[facing=west] if data block ~-1 ~ ~ Items[0] store result score @s autodelic.temp run data get block ~-1 ~ ~ Items[0].Count
+execute if block ~ ~ ~ grindstone[facing=west] if data block ~-1 ~ ~ Items[0] run scoreboard players remove @s autodelic.temp 1
+execute if block ~ ~ ~ grindstone[facing=west] if data block ~-1 ~ ~ Items[0] store result block ~-1 ~ ~ Items[0].Count int 1 run scoreboard players get @s autodelic.temp
 tag @e[tag=new_unloaded_item] remove new_unloaded_item
 
 # EAST
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=east] if data block ~1 ~ ~ Items[0] align xyz positioned ~ ~1 ~ run summon armor_stand ~0.85 ~-0.8 ~0.1 {Tags:["item_on_belt", "new_unloaded_item"], Invisible:1b,Invulnerable:1b,NoGravity:1b,ShowArms:1b,Pose:{RightArm:[345f,0f,0f]}}
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=east] if data block ~1 ~ ~ Items[0] run data modify entity @e[tag=new_unloaded_item,limit=1] HandItems[0] set from block ~1 ~ ~ Items[0]
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=east] if data block ~1 ~ ~ Items[0] run data modify entity @e[tag=new_unloaded_item,limit=1] HandItems[0].Count set value 1
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=east] if data block ~1 ~ ~ Items[0] store result score @s autodelic.temp run data get block ~1 ~ ~ Items[0].Count
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=east] if data block ~1 ~ ~ Items[0] run scoreboard players remove @s autodelic.temp 1
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=east] if data block ~1 ~ ~ Items[0] store result block ~1 ~ ~ Items[0].Count int 1 run scoreboard players get @s autodelic.temp
+execute if block ~ ~ ~ grindstone[facing=east] if data block ~1 ~ ~ Items[0] align xyz positioned ~ ~1 ~ run summon armor_stand ~0.85 ~-0.8 ~0.1 {Tags:["item_on_belt", "new_unloaded_item"], Invisible:1b,Invulnerable:1b,NoGravity:1b,ShowArms:1b,Pose:{RightArm:[345f,0f,0f]}}
+execute if block ~ ~ ~ grindstone[facing=east] if data block ~1 ~ ~ Items[0] run data modify entity @e[tag=new_unloaded_item,limit=1] HandItems[0] set from block ~1 ~ ~ Items[0]
+execute if block ~ ~ ~ grindstone[facing=east] if data block ~1 ~ ~ Items[0] run data modify entity @e[tag=new_unloaded_item,limit=1] HandItems[0].Count set value 1
+execute if block ~ ~ ~ grindstone[facing=east] if data block ~1 ~ ~ Items[0] store result score @s autodelic.temp run data get block ~1 ~ ~ Items[0].Count
+execute if block ~ ~ ~ grindstone[facing=east] if data block ~1 ~ ~ Items[0] run scoreboard players remove @s autodelic.temp 1
+execute if block ~ ~ ~ grindstone[facing=east] if data block ~1 ~ ~ Items[0] store result block ~1 ~ ~ Items[0].Count int 1 run scoreboard players get @s autodelic.temp
 tag @e[tag=new_unloaded_item] remove new_unloaded_item
 
 # SOUTH
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=south] if data block ~ ~ ~1 Items[0] align xyz positioned ~ ~1 ~ run summon armor_stand ~0.85 ~-0.8 ~0.1 {Tags:["item_on_belt", "new_unloaded_item"], Invisible:1b,Invulnerable:1b,NoGravity:1b,ShowArms:1b,Pose:{RightArm:[345f,0f,0f]}}
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=south] if data block ~ ~ ~1 Items[0] run data modify entity @e[tag=new_unloaded_item,limit=1] HandItems[0] set from block ~ ~ ~1 Items[0]
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=south] if data block ~ ~ ~1 Items[0] run data modify entity @e[tag=new_unloaded_item,limit=1] HandItems[0].Count set value 1
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=south] if data block ~ ~ ~1 Items[0] store result score @s autodelic.temp run data get block ~ ~ ~1 Items[0].Count
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=south] if data block ~ ~ ~1 Items[0] run scoreboard players remove @s autodelic.temp 1
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=south] if data block ~ ~ ~1 Items[0] store result block ~ ~ ~1 Items[0].Count int 1 run scoreboard players get @s autodelic.temp
+execute if block ~ ~ ~ grindstone[facing=south] if data block ~ ~ ~1 Items[0] align xyz positioned ~ ~1 ~ run summon armor_stand ~0.85 ~-0.8 ~0.1 {Tags:["item_on_belt", "new_unloaded_item"], Invisible:1b,Invulnerable:1b,NoGravity:1b,ShowArms:1b,Pose:{RightArm:[345f,0f,0f]}}
+execute if block ~ ~ ~ grindstone[facing=south] if data block ~ ~ ~1 Items[0] run data modify entity @e[tag=new_unloaded_item,limit=1] HandItems[0] set from block ~ ~ ~1 Items[0]
+execute if block ~ ~ ~ grindstone[facing=south] if data block ~ ~ ~1 Items[0] run data modify entity @e[tag=new_unloaded_item,limit=1] HandItems[0].Count set value 1
+execute if block ~ ~ ~ grindstone[facing=south] if data block ~ ~ ~1 Items[0] store result score @s autodelic.temp run data get block ~ ~ ~1 Items[0].Count
+execute if block ~ ~ ~ grindstone[facing=south] if data block ~ ~ ~1 Items[0] run scoreboard players remove @s autodelic.temp 1
+execute if block ~ ~ ~ grindstone[facing=south] if data block ~ ~ ~1 Items[0] store result block ~ ~ ~1 Items[0].Count int 1 run scoreboard players get @s autodelic.temp
 tag @e[tag=new_unloaded_item] remove new_unloaded_item
 
 # NORTH
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=north] if data block ~ ~ ~-1 Items[0] align xyz positioned ~ ~1 ~ run summon armor_stand ~0.85 ~-0.8 ~0.1 {Tags:["item_on_belt", "new_unloaded_item"], Invisible:1b,Invulnerable:1b,NoGravity:1b,ShowArms:1b,Pose:{RightArm:[345f,0f,0f]}}
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=north] if data block ~ ~ ~-1 Items[0] run data modify entity @e[tag=new_unloaded_item,limit=1] HandItems[0] set from block ~ ~ ~-1 Items[0]
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=north] if data block ~ ~ ~-1 Items[0] run data modify entity @e[tag=new_unloaded_item,limit=1] HandItems[0].Count set value 1
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=north] if data block ~ ~ ~-1 Items[0] store result score @s autodelic.temp run data get block ~ ~ ~-1 Items[0].Count
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=north] if data block ~ ~ ~-1 Items[0] run scoreboard players remove @s autodelic.temp 1
-execute if block ~ ~ ~ magenta_glazed_terracotta[facing=north] if data block ~ ~ ~-1 Items[0] store result block ~ ~ ~-1 Items[0].Count int 1 run scoreboard players get @s autodelic.temp
+execute if block ~ ~ ~ grindstone[facing=north] if data block ~ ~ ~-1 Items[0] align xyz positioned ~ ~1 ~ run summon armor_stand ~0.85 ~-0.8 ~0.1 {Tags:["item_on_belt", "new_unloaded_item"], Invisible:1b,Invulnerable:1b,NoGravity:1b,ShowArms:1b,Pose:{RightArm:[345f,0f,0f]}}
+execute if block ~ ~ ~ grindstone[facing=north] if data block ~ ~ ~-1 Items[0] run data modify entity @e[tag=new_unloaded_item,limit=1] HandItems[0] set from block ~ ~ ~-1 Items[0]
+execute if block ~ ~ ~ grindstone[facing=north] if data block ~ ~ ~-1 Items[0] run data modify entity @e[tag=new_unloaded_item,limit=1] HandItems[0].Count set value 1
+execute if block ~ ~ ~ grindstone[facing=north] if data block ~ ~ ~-1 Items[0] store result score @s autodelic.temp run data get block ~ ~ ~-1 Items[0].Count
+execute if block ~ ~ ~ grindstone[facing=north] if data block ~ ~ ~-1 Items[0] run scoreboard players remove @s autodelic.temp 1
+execute if block ~ ~ ~ grindstone[facing=north] if data block ~ ~ ~-1 Items[0] store result block ~ ~ ~-1 Items[0].Count int 1 run scoreboard players get @s autodelic.temp
 tag @e[tag=new_unloaded_item] remove new_unloaded_item
