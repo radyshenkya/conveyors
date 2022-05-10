@@ -1,10 +1,10 @@
 # What is that?
 This is a datapack for Minecraft v1.18.2, adding some automation.
-In datapack I added functionality to magenta terracotta, and now this block works like conveyor belt from games like factorio/mindustry.
+In datapack I added functionality to magenta glazed terracotta, and now this block works like conveyor belt from games like factorio/mindustry.
 
 ![preview](https://user-images.githubusercontent.com/52829258/167394046-e60c272c-2e9f-41cf-8e5e-eb93d39b97df.gif)
 
-# Conveyor belts (magenta)
+# Conveyor belts (magenta glazed terracotta)
 Conveyors can split items into 2 belts, load one item at a time or stack from storage.
 This functions conveyors can get if you place an item frame on top of the conveyor and place an item with the name of the desired function in that frame.
 
